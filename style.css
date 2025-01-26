@@ -10,6 +10,25 @@
 
 .header{
     grid-area: 1/2/1/4;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.search{
+    grid-area: 1/1/2/2;
+}
+
+.logos{
+    grid-area: 1/2/2/2;
+}
+
+.user{
+    grid-area: 2/1/2/2;
+}
+
+.buttons{
+    grid-area: 2/2/3/3;
 }
 
 .content{
