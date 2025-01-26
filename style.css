@@ -3,6 +3,7 @@
     --grey: #e2eaf2
 }
 
+
 html, body {
     margin: 0;
     padding: 0;
@@ -63,12 +64,13 @@ ul{
 .sidebar {
     grid-area: 1/1/5/2;
     background-color: var(--sidebar-clr);
+    max-width: 250px;
 }
 
 .sidebar ul {
     display: grid;
     grid-template-rows: repeat(12, 1fr);
-    gap: 10px;
+    gap: 14px;
 }
 
 .dashboard {
@@ -76,9 +78,6 @@ ul{
     font-size: 1.2em;
 }
 
-.communities {
-    grid-row: 8 / 10;
-}
 
 .content {
     display: grid;
@@ -105,6 +104,20 @@ ul{
     background-color: lightgray;
 }
 
+.dashboard, .home, .messages, .communities, .settings, .messages, .history, .profile, .support, .tasks, .privacy{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
+.dashboard img{
+    width: 30px;
+    height: 30px;
+}
 
+.home img, .profile img, .communities img, .settings img, .messages img, .history img
+, .support img, .tasks img, .privacy img{
+    width: 20px;
+    height: 20px;
+}
 
